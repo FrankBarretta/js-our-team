@@ -48,11 +48,13 @@ for (let i = 0; i < ourTeam.length; i++) {
     console.log(ourTeam[i].foto);
 
     cards.innerHTML += `
-    <div class="card" style="width: 18rem;">
-        <img src="${ourTeam[i].foto}" class="card-img-top" alt="${ourTeam[i].nome}">
-        <div class="card-body">
-            <h5 class="card-title">${ourTeam[i].nome}</h5>
-            <p class="card-text">${ourTeam[i].ruolo}</p>
+    <div class="col-4 py-3">
+        <div class="card" style="width: 18rem;">
+            <img src="${ourTeam[i].foto}" class="card-img-top" alt="${ourTeam[i].nome}">
+            <div class="card-body">
+                <h5 class="card-title">${ourTeam[i].nome}</h5>
+                <p class="card-text">${ourTeam[i].ruolo}</p>
+            </div>
         </div>
     </div>
     `
